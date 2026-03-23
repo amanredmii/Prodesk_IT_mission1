@@ -1,0 +1,159 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #bfd2e1;
+    color: rgb(3, 3, 3);
+}
+
+.nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.266);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navimg {
+    display: flex;
+    align-items: center;
+
+    padding-left: 20px;
+}
+
+.navimg img {
+    height: 50px;
+}
+
+.navimg span {
+    margin-left: 10px;
+    font-size: x-large;
+}
+
+.navbtn a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+    border-radius: 3px;
+
+
+}
+
+
+.navbtn a:hover {
+    background: #7eaee1;
+    transform: scale(1.1);
+    color: black;
+
+
+}
+
+
+.hero {
+    background: url("hero.jpg") center/cover no-repeat;
+    height: 100vh;
+    font-family: lato;
+    text-align: center;
+    padding-top: 150px;
+    border-radius: 5px;
+
+}
+
+
+
+.start {
+    background-color: #4CAF50;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#theme {
+    font-size: large;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    border: none;
+    background: transparent;
+}
+
+.dark {
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #817f7f;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    min-width: 250px;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#cont {
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(142, 151, 147);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .card {
+        width: 45%;
+    }
+
+    .navbtn {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .navimg span {
+        font-size: 14px;
+    }
+}
