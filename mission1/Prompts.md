@@ -4,4 +4,4 @@
 
  ......what is correct way to white in Readme.md file
 
- ......Steps for use  use icons in for web page.
+ ......Steps for use icons in for web page.

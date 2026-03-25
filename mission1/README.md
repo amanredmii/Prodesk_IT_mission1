@@ -21,10 +21,9 @@ JavaScript
 Font Awesome (for icons)
 
 
+screenshots-
 
-Website Screenshot-
-
-("screenshot1.png")
-("screenshot2.png")
+[![Website Screenshot](screenshot1.png)]
+[![Website Screenshot](screenshot2.png)]
 
 
