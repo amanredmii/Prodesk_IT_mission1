@@ -1,1 +1,30 @@
-this is first use of readme
+Prodesk IT Website
+
+A simple and responsive IT company website built using HTML, CSS, and JavaScript.
+
+
+
+Features
+Responsive Navigation Bar
+Hero Section with Call-to-Action
+Services Section (SEO, Web Development, Marketing)
+Contact Section with Icons
+Theme Toggle Button (Light/Dark Mode)
+Clean and Modern UI
+
+
+
+ Technologies Used
+HTML5
+CSS3
+JavaScript
+Font Awesome (for icons)
+
+
+
+Website Screenshot-
+
+("screenshot1.png")
+("screenshot2.png")
+
+
