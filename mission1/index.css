@@ -75,7 +75,7 @@ button {
 
 .hero {
     margin-top: 60px;
-    padding: 20px;
+    padding-top: 50px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -89,6 +89,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 20px;
 
 }
 
@@ -102,6 +103,7 @@ button {
 
 .hero img {
     border-radius: 10px;
+    padding-right: 20px;
 }
 
 
@@ -129,6 +131,7 @@ button {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .card {
@@ -138,6 +141,10 @@ button {
     width: 30%;
     min-width: 250px;
     border-radius: 20px;
+}
+
+.card p:first-of-type {
+    font-size: larger;
 }
 
 .card:hover {
@@ -160,6 +167,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px
 }
 
 .icons i {
