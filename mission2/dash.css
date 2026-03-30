@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(205, 200, 200);
+}
+
+.inpt {
+    background-color: #fff;
+    height: 500px;
+    width: 80%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
