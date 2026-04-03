@@ -20,9 +20,10 @@ for currency
 
 "how to use the currency changing api from INR to USD and USD to INR"
 
-for bug fixing
 
-There are many error i face in function like:
+
+for bug fixing
+There are many error face in function like:
 
  window.onload()
  make_chart()
