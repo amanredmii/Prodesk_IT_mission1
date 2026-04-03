@@ -40,10 +40,11 @@ window.onload = function () {
 async function setSalary() {
     totalSalary = Number(document.getElementById("salary").value);
     let currency1 = document.getElementById("currency1").value;
+    let currency2 = document.getElementById("currency2").value;
 
 
 
-    if (currency1 === "USD") {
+    if (currency1 === "INR" && currency2 === "USD") {
         let res = await fetch("https://api.exchangerate-api.com/v4/latest/INR");
         let data = await res.json();
         let rate = data.rates.USD;
@@ -53,7 +54,7 @@ async function setSalary() {
 
     }
 
-    if (currency1 === "INR") {
+    if (currency1 === "USD" && currency2 === "INR") {
         let res = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
         let data = await res.json();
         let rate = data.rates.INR;
