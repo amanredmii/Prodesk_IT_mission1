@@ -1,10 +1,8 @@
-# 💰 Salary & Expense Tracker
+
 
 A simple web-based application to track salary, expenses, and remaining balance in real-time. It also visualizes expenses using charts and allows users to export data as a PDF.
 
----
-
-## 🚀 Features
+-
 
 - Add and set monthly salary
 - Add multiple expenses with name and amount
@@ -19,7 +17,6 @@ A simple web-based application to track salary, expenses, and remaining balance 
 
 ---
 
-## 🛠️ Technologies Used
 
 - HTML
 - CSS
@@ -31,7 +28,6 @@ A simple web-based application to track salary, expenses, and remaining balance 
 
 ---
 
-## ⚙️ How It Works
 
 1. User enters salary and selects currency
 2. User adds expenses (name + amount)
@@ -44,7 +40,6 @@ A simple web-based application to track salary, expenses, and remaining balance 
 
 ---
 
-## 📸 UI Sections
 
 - Salary Input Section
 - Expense Input Section
@@ -53,7 +48,9 @@ A simple web-based application to track salary, expenses, and remaining balance 
 - Chart Visualization
 
 ---
+screenshots-
 
-## 📥 Installation & Usage
+[![Website Screenshot](s1.png)]
+[![Website Screenshot](s2.png)]
 
-1. Clone the repository:
+
