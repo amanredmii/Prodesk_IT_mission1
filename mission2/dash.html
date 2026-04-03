@@ -4,21 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cash-Flow</title>
+
     <link rel="stylesheet" href="dash.css">
 </head>
 
 <body>
-    <div class="inpt">
-        <div>
-            <form>
-                <input type="text"><br>
-                <input type="text"><br>
-                <input type="text">
-            </form>
+    <div class="dash">
+        <div class="dash-up">
+            <h1>Salary & Expense Tracker</h1>
+            <p id="currency"></p>
+            <input type="number" placeholder="Enter Salary" id="salary">
+            <select id="currency1">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+            </select>
+            <br>
+            <button onclick="setSalary()">Set Salary</button>
+
+        </div>
+
+        <div class="dash-dwn">
+            <div class="dash-left">
+                Expandature Name :<input type="text" id="expense-name"><br>
+                Expandature Amount : <input type="text" id="expense-amt"><br>
+                <button onclick="addExpense()">Add</button>
+            </div>
+
+            <div class="dash-right">
+                <div class="oupt" id="total">Total Expandature </div><br>
+                <div class="oupt" id="balance">Remaining Balance</div>
+            </div>
         </div>
     </div>
 
+    <div class="list-chart">
+        <div class="lst">
+            <h2>Expense List</h2>
+            <div>
+                <ol id="expenselist"></ol>
+            </div>
+        </div>
+        <div class="chart">
+            <h2>Expense Chart</h2>
+            <canvas id="Chart"></canvas>
+        </div>
+    </div>
+
+    <button id="prt" onclick="pdf()">print</button>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="dash.js"></script>
 
 </html>
