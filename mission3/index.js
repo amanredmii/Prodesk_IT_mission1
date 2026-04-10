@@ -16,12 +16,14 @@ async function print_repo(usr) {
     let output = "";
 
     for (let i = 0; i < Math.min(5, repos.length); i++) {
+        const date = new Date(repos[i].created_at);
+
         output += `
                 <div>
                     <a href="${repos[i].html_url}" target="_blank">
                         ${repos[i].name}
                     </a>
-
+                    <p>Created on: ${date.toDateString()}</p>
                 </div>
             `;
     }
@@ -76,5 +78,10 @@ async function getUser() {
     } catch (error) {
         result.innerHTML = error.message;
     }
+}
+
+function btl_mode() {
+    window.open("battel.html", "_blank");
+
 }
 
