@@ -6,15 +6,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post("/generate", async (req, res) => {
+app.post("/aman", async (req, res) => {
     const { name, role, company, skills } = req.body;
 
-    const prompt = `Generate ONLY a professional cover letter.
-
+    const prompt = `Generate a professional cover letter.
 Rules:
-- Use ONLY the provided details.
-- Do NOT include placeholders or generic content.
-- Keep it concise and formal.
+- Do NOT include placeholders or generic content..
 - Output ONLY the cover letter (no explanations, no headings like "Here is your cover letter").
 
 Details:

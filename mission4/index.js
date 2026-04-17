@@ -1,4 +1,4 @@
-async function generateLetter() {
+async function c_letter() {
     const name = document.getElementById("name").value;
     const role = document.getElementById("role").value;
     const company = document.getElementById("company").value;
@@ -12,7 +12,7 @@ async function generateLetter() {
     outputBox.classList.add("hidden");
 
     try {
-        const res = await fetch("http://localhost:3000/generate", {
+        const res = await fetch("http://localhost:3000/aman", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,7 +32,7 @@ async function generateLetter() {
     outputBox.classList.remove("hidden");
 }
 
-function copyText() {
+function copy_text() {
     const text = document.getElementById("output").innerText;
     navigator.clipboard.writeText(text);
     alert("Copied!");
