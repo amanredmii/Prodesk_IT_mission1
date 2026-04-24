@@ -15,3 +15,5 @@
 "Integrate localStorage "
 
 "How to Use CSS property dynamically in React for color the task as per their priority"
+
+"for make the site responsive use GPT "
