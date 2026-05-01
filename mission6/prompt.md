@@ -17,7 +17,8 @@
 
 "how to implement global state in shopin web project"
 
-"explain the context api and how to i use it in my project"
+
+"explain the context api and how to i use it in my project implement this to use in my cart updation"
 
 
 
