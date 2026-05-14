@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 
 function Home() {
 
+    console.log(
+        import.meta.env.VITE_TMDB_API_KEY
+    );
+
     const [movies, setMovies] = useState([]);
 
     const [page, setPage] = useState(1);
@@ -183,9 +187,7 @@ function Home() {
 
             </div>
 
-            console.log(
-            import.meta.env.VITE_TMDB_API_KEY
-            );
+
 
         </div>
 
