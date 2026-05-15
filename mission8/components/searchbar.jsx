@@ -64,12 +64,11 @@ function SearchBar() {
 
 
 
-    // Navigate to Details Page
     function handleMovieClick(id) {
 
         navigate(`/movie/${id}`);
 
-        // clear search
+
         setQuery("");
 
         setMovies([]);
@@ -81,7 +80,6 @@ function SearchBar() {
 
         <div className="relative w-full">
 
-            {/* Search Input */}
             <input
                 type="text"
                 placeholder="Search movies..."
@@ -101,9 +99,6 @@ function SearchBar() {
                 "
             />
 
-
-
-            {/* Loading */}
             {loading && (
 
                 <p className="text-gray-400 mt-3">
@@ -113,8 +108,6 @@ function SearchBar() {
             )}
 
 
-
-            {/* Results */}
             {movies.length > 0 && (
 
                 <div
@@ -155,7 +148,7 @@ function SearchBar() {
                             "
                         >
 
-                            {/* Poster */}
+
                             <img
                                 src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
                                 alt={movie.title}
@@ -167,7 +160,7 @@ function SearchBar() {
 
 
 
-                            {/* Info */}
+
                             <div>
 
                                 <h2

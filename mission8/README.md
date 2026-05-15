@@ -28,5 +28,6 @@ Users can browse popular movies, search movies in real time, view detailed movie
 - TMDB API
 - Vite
 
----
+deploy on vercel
+https://prodesk-it-mission8-xu8e.vercel.app/
 
