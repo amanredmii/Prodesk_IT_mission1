@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const app = express();
 
@@ -9,7 +10,7 @@ app.use(express.json());
 
 const Post = require("./Post");
 
-mongoose.connect("mongodb+srv://a67686729_db_user:123OCcDr4ZSfYscn@cluster0.mhiywxl.mongodb.net/blogDB?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect(process.env.mdb)
 
 app.post("/posts", async (req, res) => {
 
