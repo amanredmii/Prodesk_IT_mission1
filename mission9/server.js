@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-const port = 5000;
+const PORT = 5000;
 
 app.use(express.json());
 
@@ -16,21 +16,20 @@ app.get("/posts", (req, res) => {
 
 app.get("/posts/:id", (req, res) => {
     const id = parseInt(req.params.id);
-    for (let i = 0; i < blogPosts.length; i++) {
-        if (blogposts[i].id === id) {
-            return res.json(blogposts[i]);
+    for (let i = 0; i < blogpost.length; i++) {
+        if (blogpost[i].id === id) {
+            return res.json(blogpost[i]);
         }
     }
 });
 
-
-
-
-
-
 app.post("/posts", (req, res) => {
     const add_pst = req.body;
     blogpost.push(add_pst);
+    res.json({
+        message: "post added",
+        data: add_pst
+    });
 });
 
 
@@ -38,17 +37,17 @@ app.post("/posts", (req, res) => {
 app.put("/posts/:id", (req, res) => {
     const id = parseInt(req.params.id);
 
-    for (let i = 0; i < blogPosts.length; i++) {
+    for (let i = 0; i < blogpost.length; i++) {
 
-        if (blogPosts[i].id === id) {
+        if (blogpost[i].id === id) {
 
-            blogPosts[i] = {
-                ...blogPosts[i],
+            blogpost[i] = {
+                ...blogpost[i],
                 ...req.body
             };
             return res.json({
                 message: "post updated",
-                data: blogPosts[i]
+                data: blogpost[i]
             });
         }
     }
@@ -75,6 +74,6 @@ app.delete("/posts/:id", (req, res) => {
 });
 
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
